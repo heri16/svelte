@@ -66,10 +66,10 @@
 					});
 
 					components.sort((a, b) => {
-						if (a.name === 'App' && a.type === 'svelte') return -1;
-						if (b.name === 'App' && b.type === 'svelte') return 1;
+						if (a.name === 'App' && a.type === 'md') return -1;
+						if (b.name === 'App' && b.type === 'md') return 1;
 
-						if (a.type !== b.type) return a.type === 'svelte' ? -1 : 1;
+						if (a.type !== b.type) return a.type === 'md' ? -1 : 1;
 
 						return a.name < b.name ? -1 : 1;
 					});
